@@ -5,7 +5,8 @@
             "nom": "VÉLO VTT ST 100 VERT",
             "description": "Ce VTT est conçu pour vos 1ères randonnées VTT, par temps sec. Efficacité ? Robustesse ? Les 2 s'il vous plaît ! Franchissez sans peine et sans casse vos premiers obstacles : cadre aluminium léger et roues montées sur jantes double parois.",
             "composition": "Cadre 100% Aluminium",
-            "prix": "239€"
+            "prix": "239€",
+            "image" : "https://contents.mediadecathlon.com/p1633470/k$29c282707c6d811afcedc81b08c59e6e/sq/velo-vtt-st-100-jaune-275.jpg&f=960x960"
         },
 
         {
@@ -13,7 +14,8 @@
             "nom" : "VÉLO VTT SEMI RIGIDE ROCKRIDER XC 100",
             "description": "Ce VTT est conçu pour se lancer dans la pratique du VTT Cross Country. Votre premier VTT XC axé performance 100 % Shimano!",
             "composition": "Cadre / Châssis 100 % Aluminium",
-            "prix": "899€"
+            "prix": "899€",
+            "image" : "https://contents.mediadecathlon.com/p2045237/k$284011a1a872e61f5ce8c1c7e8c3212f/sq/velo-vtt-semi-rigide-rockrider-xc-100-29-shimano-deore-1x11.jpg&f=960x960"
         },
 
         {
@@ -21,7 +23,8 @@
             "nom": "VÉLO VTT ST 530 FEMME TURQUOISE",
             "description": "Adapté à la morphologie féminine, ce VTT est conçu pour vos randonnées VTT, toute l'année. Le mono plateau et les freins à disque hydrauliques ça change tout! Avec votre VTT, améliorez votre pilotage: accélérer et freiner très rapidement pour vous adapter aux aléas du terrain.",
             "composition": "Cadre / Châssis 100 % Aluminium",
-            "prix": "399€"
+            "prix": "399€",
+            "image" : "https://contents.mediadecathlon.com/p1863835/k$304cec09ede9565265a8767007a7adaf/sq/velo-vtt-st-530-femme-turquoise-275.jpg&f=960x960"
         },
 
         {
@@ -29,7 +32,8 @@
             "nom": "VTT ENFANT ROCKRIDER ST 500 24 POUCES 9 - 12 ANS JAUNE FLUO", 
             "description": "Nous avons conçu ce vélo tout terrain pour les enfants de 9 à 12 ans souhaitant pratiquer régulièrement le VTT. Pour affronter facilement les obstacles des terrains accidentés, nous avons équipé ce VTT d'une fourche suspendue. Grâce à ses 18 vitesses vous pouvez aborder des sentiers vallonnés.",
             "composition": "Cadre / Châssis 100 % Acier", 
-            "prix": "190€"
+            "prix": "190€", 
+            "image" : "https://contents.mediadecathlon.com/p1732642/k$da7d34b23236655c16daa6d6d25d4511/sq/vtt-enfant-rockrider-st-500-24-pouces-9-12-ans-jaune-fluo.jpg&f=960x960"
         },
 
         {
@@ -37,15 +41,17 @@
             "nom": "VTT ENFANT ROCKRIDER ST 900 20 POUCES 6 - 9 ANS ROUGE" ,
             "description": "Nous avons conçu ce vélo tout terrain pour les enfants de 6 à 9 ans souhaitant se perfectionner à la pratique du VTT. Pour affronter facilement les obstacles des terrains accidentés, nous avons équipé ce VTT d'une fourche suspendue. Grâce à ses 6 vitesses vous pouvez aborder des sentiers vallonnés.",
             "composition": "Cadre / Châssis 100 % Acier",
-            "prix": "260€"
+            "prix": "260€",
+            "image" : "https://contents.mediadecathlon.com/p1732643/k$a98b5c78ac2c109433d63e92d5298541/sq/vtt-enfant-rockrider-st-900-20-pouces-6-9-ans-rouge.jpg&f=960x960"
         },
 
         {
             "ref": "VTTK3", 
-            "nom": "VTT ENFANT ROCKRIDER ST 500 24 POUCES 9 - 12 ANS JAUNE FLUO", 
+            "nom": "VTT ENFANT ROCKRIDER ST 500 24 POUCES 9 - 12 ANS BLEU", 
             "description": "Nous avons conçu ce vélo tout terrain pour les enfants de 9 à 12 ans souhaitant pratiquer régulièrement le VTT. Pour affronter facilement les obstacles des terrains accidentés, nous avons équipé ce VTT d'une fourche suspendue. Grâce à ses 18 vitesses vous pouvez aborder des sentiers vallonnés.",
             "composition": "Cadre / Châssis 100 % Acier",
-            "prix": "190€"
+            "prix": "190€",
+            "image": "https://contents.mediadecathlon.com/p1732641/k$78a7b55f376e1f05c8c023e633f3b9d0/sq/vtt-enfant-rockrider-st-500-24-pouces-9-12-ans-bleu.jpg&f=960x960"
         },
 
         {
@@ -53,7 +59,8 @@
             "nom": "VTT ENFANT ROCKRIDER ST 920 24 POUCES 9 - 12 ANS VERT", 
             "description": "Nous avons conçu ce vélo tout terrain pour les enfants de 9 à 12 ans souhaitant se perfectionner à la pratique du VTT. Équipé du même cadre alu que le ST 900, ce VTT dispose d'une fourche suspendue à air ajustable au poids de l'enfant et de freins à disques hydrauliques pour freiner efficacement en descente.",
             "composition": "Cadre 100 % Aluminium", 
-            "prix": "420€"
+            "prix": "420€",
+            "image":"https://contents.mediadecathlon.com/p1748075/k$6df38a2ffb7a5edfa97d7456d91b285a/sq/vtt-enfant-rockrider-st-920-24-pouces-9-12-ans-vert.jpg&f=960x960"
         },
 
         {
@@ -61,7 +68,8 @@
             "nom": "VÉLO TOUT CHEMIN ELECTRIQUE RIVERSIDE 500 E GRIS VERT",
             "description": "Notre équipe de concepteurs passionnés a développé ce vélo électrique pour booster vos randonnées régulières sur routes et chemins. Rythmez vos balades en toute facilité!Grâce à l 'assistance électrique, dosez votre effort et ressentez ce coup de pouce qui fait la différence jusqu'à 90 km!",
             "composition": "Cadre 100 % Aluminium", 
-            "prix": "1249€"
+            "prix": "1249€",
+            "image":"https://contents.mediadecathlon.com/p1922090/k$805ed784f8e4ec853c5b9939e4f67366/sq/velo-tout-chemin-electrique-riverside-500-e-gris-vert.jpg&f=960x960"
         },
 
         {
@@ -69,7 +77,8 @@
             "nom": "VÉLO TOUT CHEMIN BALADE ELECTRIQUE ORIGINAL 920 E ",
             "description": "Notre équipe de concepteurs passionnés a développé ce vélo électrique pour booster vos balades sur routes et chemins. Rythmez vos balades en toute facilité!Grâce à l 'assistance électrique, dosez votre effort et ressentez ce coup de pouce qui fait la différence jusqu'à 90 km.",
             "composition": "Cadre / Châssis 100 % Aluminium", 
-            "prix": "999€"
+            "prix": "999€",
+            "image":"https://contents.mediadecathlon.com/p1845250/k$56eed87955b512cd5695592cebd2970a/sq/velo-tout-chemin-balade-electrique-original-920-e.jpg&f=960x960"
         },
 
         {
@@ -77,7 +86,8 @@
             "nom": "VÉLO TOUT CHEMIN RIVERSIDE 120 GRIS" ,
             "description": "Notre équipe de concepteurs passionnés a développé ce vélo tout chemin pour vos sorties occasionnelles jusqu 'à 20 km. Aérez - vous avec le Riverside 120. Changez de vitesse facilement, avec une seule gâchette.",
             "composition": "Cadre / Châssis 100 % Aluminium",
-            "prix": "199€"
+            "prix": "199€",
+            "image":"https://contents.mediadecathlon.com/p1278167/k$1d45c4166cbefcbd8c4bbf9c94ff06b8/sq/velo-tout-chemin-riverside-120-gris.jpg&f=960x960"
         },
 
         {
@@ -85,7 +95,8 @@
             "nom": "VÉLO VILLE ÉLECTRIQUE ELOPS 120 E",
             "description": "Ce vélo électrique tout équipé (porte - bagages, garde - boue, éclairage intégré), est conçu pour les déplacements courts en ville. Avec ce vélo à assistance électrique, dotez vous d'une aide pour rejoindre plus facilement votre destination, sans transpirer excessivement tout en maîtrisant parfaitement votre temps !",
             "composition": "Cadre / Châssis 100 % Aluminium",
-            "prix": "799€"
+            "prix": "799€",
+            "image":"https://contents.mediadecathlon.com/p1886648/k$8b840279e11fdb8b93578c2640d64a5a/sq/velo-ville-electrique-elops-120-e.jpg&f=960x960"
         },
 
         {
@@ -93,7 +104,8 @@
             "nom": "VELO DE VILLE ELECTRIQUE ELOPS 920 CADRE BAS", 
             "description": "Notre équipe de passionné· e· s a conçu ce vélo électrique pour booster vos trajets en ville et vos ballades à vélo. Pédalez avec un coup de pouce! Dynamisez vos trajets en ville: quand vous avez le vent de face, quand vous êtes en retard au travail ou quand vous êtes chargée, le moteur à capteur de puissance s'adapte à votre effort.",
             "composition": "Cadre / Châssis 100 % Aluminium", 
-            "prix": "1500€"
+            "prix": "1500€",
+            "image":"https://contents.mediadecathlon.com/p1268794/k$b25c6f49d3c3f59147493c0d4a0e38b5/sq/velo-de-ville-electrique-elops-920-cadre-bas.jpg&f=960x960"
         },
 
 
@@ -102,7 +114,8 @@
             "nom": "VELO DE VILLE ELOPS 520 CADRE BAS BLEU JEANS", 
             "description": "Notre équipe de passionné· e· s a conçu ce vélo pour tous vos trajets urbains. Faites du vélo en ville régulièrement...et prenez - y du plaisir! Evadez - vous en ville grâce à un vélo hollandais confortable, sûr et bien équipé! Avec son cadre bas, son porte - bagage, son panier ou encore sa dynamo, tous vos trajets gagnent en simplicité.",
             "composition": "Cadre / Châssis 100 % Aluminium", 
-            "prix": "270€"
+            "prix": "270€",
+            "image":"https://contents.mediadecathlon.com/p1819326/k$98c36d9eacda925545daab704c623868"
         },
 
         {
@@ -110,7 +123,8 @@
             "nom": "VELO DE VILLE ELECTRIQUE ELOPS 920 CADRE BAS", 
             "description": "Notre équipe de passionné· e· s a conçu ce vélo électrique pour booster vos trajets en ville et vos ballades à vélo. Pédalez avec un coup de pouce! Dynamisez vos trajets en ville: quand vous avez le vent de face quand vous êtes en retard au travail ou quand vous êtes chargée, le moteur à capteur de puissance s 'adapte à votre effort.",
             "composition": "Cadre / Châssis 100 % Aluminium" ,
-            "prix": "1500€"
+            "prix": "1500€",
+            "image":"https://contents.mediadecathlon.com/p1268794/k$b25c6f49d3c3f59147493c0d4a0e38b5/sq/velo-de-ville-electrique-elops-920-cadre-bas.jpg&f=960x960"
         }
     ]
 }
