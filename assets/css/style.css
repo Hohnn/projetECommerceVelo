@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
 
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
 header {
     height: 650px;
     background-image: url(../images/jonny-kennaugh-nPOtzvGLYW0-unsplash.jpg);
     background-size: cover;
     background-position: center 50%;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
     position: relative;
 }
 
@@ -55,6 +58,22 @@ header {
     color: white;
     border-radius: 100px;
     padding: 0.3em 2.2em;
+}
+
+.services .icon {
+    background-color: #ffd200;
+    padding: 0 0.15em;
+    border-radius: 0.8em;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.services i{
+    font-size: 3em;
+}
+
+.services .desc {
+    font-size: 0.8em;
 }
 
 
