@@ -12,7 +12,7 @@ fetch('http://localhost:8888/projetECommerce/assets/js/result.json')
         </div>
         <div class="col-5 desc d-flex flex-column justify-content-between align-items-start">
           <h3 class="mb-4">${element.nom}</h3>
-          <p>${element.description}</p>
+          <p>${element.composition}</p>
           <div>Prix : ${element.prix}</div>
           <button type="button" class="btn mt-auto mb-3">Ajouter au panier</button>
         </div>

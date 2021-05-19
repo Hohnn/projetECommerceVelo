@@ -116,34 +116,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
-
-  <script>
-
-fetch('http://localhost:8888/projetECommerce/assets/js/result.json')
-    .then(resp => resp.json())
-    .then(function(bikeJSON){
-      bikeJSON.results.forEach(element => {
-        bike.innerHTML += `
-        
-      <!-- les produits -->
-      <div class="row justify-content-between myCard">
-        <div class="col-6 bike">
-          <img src="${element.image}" alt="">
-        </div>
-        <div class="col-5 desc d-flex flex-column justify-content-between align-items-start">
-          <h3 class="mb-4">${element.nom}</h3>
-          <p>${element.description}</p>
-          <div>Prix : ${element.prix}</div>
-          <button type="button" class="btn mt-auto mb-3">Ajouter au panier</button>
-        </div>
-      </div>
-        `
-      });
-    })
-.catch(err => console.error(`erreur importation JSON`))
-
-
-  </script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
