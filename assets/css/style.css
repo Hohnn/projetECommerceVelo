@@ -78,8 +78,9 @@ header {
 }
 
 .bike {
-    
+    max-width: 500px;
 }
+
 
 .bike img{
     width: 100%;
@@ -101,6 +102,47 @@ main .desc h3 {
     margin-bottom: 100px;
 }
 
+.myCard:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.myCard button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.vosPhoto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.vosPhoto p {
+    font-family: 'Mulish', sans-serif;
+    color: rgb(82, 82, 82);
+    line-height: 1.6em;
+}
+
+footer {
+    color: white;
+    padding: 2em;
+}
+
+.social {
+    font-size: 2em;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer label {
+    font-family: 'Mulish', sans-serif;
+}
+
+footer .myInput {
+    width: 300px;
+}
 
 
 
