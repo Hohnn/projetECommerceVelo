@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald:wght@400;500;700&display=swap');
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -9,7 +9,7 @@ header {
     height: 650px;
     background-image: url(../images/jonny-kennaugh-nPOtzvGLYW0-unsplash.jpg);
     background-size: cover;
-    background-position: center 50%;
+    background-position: center 45%;
     position: relative;
 }
 
@@ -53,11 +53,12 @@ header {
     font-size: 4em;
 }
 
-.headerModel button {
+.headerModel button, .desc button {
     background-color: #ff8d00;
     color: white;
     border-radius: 100px;
     padding: 0.3em 2.2em;
+    letter-spacing: 0.1em;
 }
 
 .services .icon {
@@ -74,6 +75,30 @@ header {
 
 .services .desc {
     font-size: 0.8em;
+}
+
+.bike {
+    
+}
+
+.bike img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+main .desc p{
+    font-family: 'Mulish', sans-serif;
+    color: rgb(82, 82, 82);
+    line-height: 1.6em;
+}
+
+main .desc h3 {
+    font-size: 2em;
+}
+
+.myCard {
+    margin-bottom: 100px;
 }
 
 

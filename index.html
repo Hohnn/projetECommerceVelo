@@ -1,83 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Bike Life</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Bike Life</title>
 </head>
+
 <body>
-    <header>
-        <div class="container position-relative h-100">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">BIKE<span class="fw-normal">LIFE</span></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item mx-lg-5">
-                        <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">VTT</a>
-                      </li>
-                      <li class="nav-item mx-lg-5">
-                        <a class="nav-link" href="#">VTC</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ELECTRIQUE</a>
-                      </li>
-                      <li class="nav-item mx-lg-5">
-                        <a class="nav-link" href="#">CONTACTE</a>
-                      </li>
-                    </ul>
-                    <button type="button" class="panier btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="bi bi-cart3"></i>
-                    </button>
-                  </div>
-                </div>
-            </nav>
-            <div class="row shape">
-              <div class="headerModel">
-                  <div class="fs-4">NEW MODEL</div>
-                  <h1>SIAMESE</h1>
-                  <button type="button" class="btn">SHOP NOW</button>
-              </div>
-            </div>
+  <header>
+    <div class="container position-relative h-100">
+      <!-- La navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BIKE<span class="fw-normal">LIFE</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-lg-5">
+                <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VTT</a>
+              </li>
+              <li class="nav-item mx-lg-5">
+                <a class="nav-link" href="#">VTC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ELECTRIQUE</a>
+              </li>
+              <li class="nav-item mx-lg-5">
+                <a class="nav-link" href="#">CONTACTE</a>
+              </li>
+            </ul>
+            <button type="button" class="panier btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="bi bi-cart3"></i>
+            </button>
+          </div>
         </div>
-    </header>
-    <main class="container text-center">
-      <div class="row services">
-        <div class="col-12 my-4 fw-normal">POURQUOI NOUS ?</div>
-        <div class="col">
-          <div class="icon"><i class="bi bi-shield-check"></i></div>          
-          <div class="my-2">DESIGN SECURITAIRE</div>
-          <div class="fw-normal desc">Safety first</div>
-        </div>
-        <div class="col">
-          <div class="icon"><i class="bi bi-headset"></i></div>          
-          <div class="my-2">SUPPORT 24/7</div>
-          <div class="fw-normal desc">Disponible tous les jours</div>
-        </div>
-        <div class="col">
-          <div class="icon"><i class="bi bi-bicycle"></i></div>          
-          <div class="my-2">SERVICE EXPERT</div>
-          <div class="fw-normal desc">Professionnels qualifié</div>
-        </div>
-        <div class="col">
-          <div class="icon"><i class="bi bi-tools"></i></div>          
-          <div class="my-2">SAV</div>
-          <div class="fw-normal desc">Réparation mécanique</div>
+      </nav>
+      <!-- Article principale -->
+      <div class="row shape">
+        <div class="headerModel">
+          <div class="fs-4">NEW MODEL</div>
+          <h1>SIAMESE</h1>
+          <button type="button" class="btn">SHOP NOW</button>
         </div>
       </div>
-    </main>
-  
+    </div>
+  </header>
+  <!-- JSON à générer dans le main -->
+  <main class="container ">
+    <!-- Les services à afficher sur la page d'accueil -->
+    <div class="row services text-center">
+      <div class="col-12 my-4 fw-normal">POURQUOI NOUS ?</div>
+      <div class="col">
+        <div class="icon"><i class="bi bi-shield-check"></i></div>
+        <div class="my-2">DESIGN SECURITAIRE</div>
+        <div class="fw-normal desc">Safety first</div>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="bi bi-headset"></i></div>
+        <div class="my-2">SUPPORT 24/7</div>
+        <div class="fw-normal desc">Disponible tous les jours</div>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="bi bi-bicycle"></i></div>
+        <div class="my-2">SERVICE EXPERT</div>
+        <div class="fw-normal desc">Professionnels qualifié</div>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="bi bi-tools"></i></div>
+        <div class="my-2">SAV</div>
+        <div class="fw-normal desc">Réparation mécanique</div>
+      </div>
+    </div>
+    <div class="container-fluid ">
+      <!-- le models/catégorie -->
+      <div class="row my-5">MODELS</div>
+      <!-- les produits -->
+      <div class="row justify-content-between myCard">
+        <div class="col-6 bike">
+          <img src="./assets/img/VTTH2.jpg" alt="">
+        </div>
+        <div class="col-5 desc d-flex flex-column justify-content-between align-items-start">
+          <h3 class="mb-4">SIAMESE</h3>
+          <p>Ce VTT est conçu pour vos 1ères randonnées VTT, par temps sec. Efficacité ? Robustesse ? Les 2 s'il vous
+            plaît ! Franchissez sans peine et sans casse vos premiers obstacles : cadre aluminium léger et roues montées
+            sur jantes double parois.</p>
+          <button type="button" class="btn mt-auto mb-3">SHOP NOW</button>
+        </div>
+      </div>
+      <div class="row justify-content-between myCard">
+        <div class="col-6 bike">
+          <img src="./assets/img/VTTH2.jpg" alt="">
+        </div>
+        <div class="col-5 desc d-flex flex-column justify-content-between align-items-start">
+          <h3 class="mb-4">SIAMESE</h3>
+          <p>Ce VTT est conçu pour vos 1ères randonnées VTT, par temps sec. Efficacité ? Robustesse ? Les 2 s'il vous
+            plaît ! Franchissez sans peine et sans casse vos premiers obstacles : cadre aluminium léger et roues montées
+            sur jantes double parois.</p>
+          <button type="button" class="btn mt-auto mb-3">SHOP NOW</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -97,6 +141,9 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
