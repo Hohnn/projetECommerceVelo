@@ -53,12 +53,20 @@ header {
     font-size: 4em;
 }
 
-.headerModel button, .desc button {
+.headerModel a, .desc button {
     background-color: #ff8d00;
     color: white;
     border-radius: 100px;
     padding: 0.3em 2.2em;
     letter-spacing: 0.1em;
+}
+
+.panier {
+    background-color: #ff8d00;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.2em 1em;
+    border-radius: 100px;
 }
 
 .services .icon {

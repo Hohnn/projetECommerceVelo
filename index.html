@@ -29,22 +29,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item mx-lg-5">
-                <a class="nav-link active" aria-current="page" href="#">ACCUEIL</a>
+                <a class="nav-link active" aria-current="page" href="#" data-navButton="accueil">ACCUEIL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">VTT</a>
+                <a class="nav-link" href="#model" data-navButton="vtt">VTT</a>
               </li>
               <li class="nav-item mx-lg-5">
-                <a class="nav-link" href="#">VTC</a>
+                <a class="nav-link" href="#model" data-navButton="vtc">VTC</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ELECTRIQUE</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="#model" data-navButton="ville">VILLE</a>
               </li>
               <li class="nav-item mx-lg-5">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#model" data-navButton="elec">ELECTRIQUE</a>
               </li>
             </ul>
-            <button type="button" class="panier btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="panier btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="bi bi-cart3"></i>
             </button>
           </div>
@@ -53,9 +53,9 @@
       <!-- Article principale -->
       <div class="row shape">
         <div class="headerModel">
-          <div class="fs-4">NEW MODEL</div>
+          <div class="fs-4 fw-normal">NOUVEAU MODEL</div>
           <h1>SIAMESE</h1>
-          <button type="button" class="btn">SHOP NOW</button>
+          <a href="#model" type="button" class="btn" data-navButton="vtt">DECOUVRIE</a>
         </div>
       </div>
     </div>
@@ -63,8 +63,8 @@
   
   <main class="container ">
     <!-- Les services à afficher sur la page d'accueil -->
-    <div class="row gy-4 services text-center">
-      <div class="col-12 my-5 fw-normal">POURQUOI NOUS ?</div>
+    <div class="row gy-4 services text-center" id="services">
+      <div class="col-12 mt-5 mb-3 fw-normal">POURQUOI NOUS ?</div>
       <div class="col-6 col-md-3">
         <div class="icon"><i class="bi bi-shield-check"></i></div>
         <div class="my-2">DESIGN SECURITAIRE</div>
@@ -89,7 +89,7 @@
     <!-- JSON à générer dans ce container -->
     <div class="container-fluid parent" id="bike">
       <!-- le models/catégorie -->
-      <div class="row my-5">MODELS</div>
+      <div class="row my-5" id="model">TOUS LES MODELS</div>
       <!-- les produits -->
       
     </div>

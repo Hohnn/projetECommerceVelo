@@ -2,11 +2,12 @@
 fetch('./assets/js/result.json')
     .then(resp => resp.json())
     .then(function(bikeJSON){
+      
       bikeJSON.results.forEach(element => {
           //attention, ajout de l'id="bike" à la ligne 90 de l'HTML  <div class="container-fluid" 
         bike.innerHTML += ` 
       <!-- les produits -->
-      <div class="row justify-content-between myCard">
+      <div class="row justify-content-between myCard" data-delete="${element.ref}">
         <div class="col-12 col-md-6 bike">
           <img src="${element.image}" alt="">
         </div>
@@ -39,6 +40,73 @@ fetch('./assets/js/result.json')
     </div>
     </div>
         `
+        clickNavButton(element)
       });
+      
     })
 .catch(err => console.error(`erreur importation JSON`))
+
+
+// navBar
+let navButton = document.querySelectorAll('a[data-navButton]')
+console.log(navButton)
+
+function clickNavButton(params) {
+  navButton.forEach(element => {
+    element.addEventListener('click', function() {
+      let allBike = document.querySelector(`div[data-delete="${params.ref}"]`)
+      let services = document.getElementById('services')
+      let model = document.getElementById('model')
+      navButton.forEach(element => {
+        element.classList.remove('active')
+      })      
+      this.classList.add('active')
+      if (this.dataset.navbutton == 'accueil') {
+        allBike.classList.remove('d-none')
+        services.classList.remove('d-none')
+        model.innerHTML = 'TOUS LES MODELS'
+      }
+      if (this.dataset.navbutton == 'vtt') {
+        if (!params.ref.match('VTT')) {
+          let toDelete = document.querySelector(`div[data-delete="${params.ref}"]`)
+          toDelete.classList.add('d-none')
+          services.classList.add('d-none')
+          model.innerHTML = 'LES VTT'
+        } else {
+          allBike.classList.remove('d-none')
+        }
+      }
+      if (this.dataset.navbutton == 'vtc') {
+        if (!params.ref.match('VTC')) {
+          let toDelete = document.querySelector(`div[data-delete="${params.ref}"]`)
+          toDelete.classList.add('d-none')
+          services.classList.add('d-none')
+          model.innerHTML = 'LES VTC'
+        } else {
+          allBike.classList.remove('d-none')
+        }
+      }
+      if (this.dataset.navbutton == 'elec') {
+        if (!params.ref.match('E')) {
+          let toDelete = document.querySelector(`div[data-delete="${params.ref}"]`)
+          toDelete.classList.add('d-none')
+          services.classList.add('d-none')
+          model.innerHTML = 'LES ELECTRIQUES'
+        } else {
+          allBike.classList.remove('d-none')
+        }
+      }
+      if (this.dataset.navbutton == 'ville') {
+        if (!params.ref.match('VV')) {
+          let toDelete = document.querySelector(`div[data-delete="${params.ref}"]`)
+          toDelete.classList.add('d-none')
+          services.classList.add('d-none')
+          model.innerHTML = 'LES VELOS DE VILLE'
+        } else {
+          allBike.classList.remove('d-none')
+        }
+      }
+    })
+  })
+}
+
