@@ -13,10 +13,12 @@ fetch('./assets/js/result.json')
         <div class="col-12 col-md-5 desc d-flex flex-column justify-content-between align-items-start">
           <h3 class="mb-4">${element.nom}</h3>
           <p>${element.composition}</p>
-          <div>Prix : ${element.prix}</div>
-          <button type="button" class="btn mt-auto mb-3">Ajouter au panier</button>
-          <button type="button" class="btn mt-auto mb-3" data-bs-toggle="modal" data-bs-target="#${element.ref}">+ d'info</button>
-        </div>
+          <div class="pb-2">Prix : ${element.prix}</div>
+          <div class="d-flex justify-content-between w-100">
+            <button type="button" class="btn mt-auto mb-3"><i class="bi bi-cart3"></i></button>
+            <button type="button" class="btn mt-auto mb-3" data-bs-toggle="modal" data-bs-target="#${element.ref}">+ d'info</button>
+          </div>
+          </div>
       </div>
       <!-- Modal -->
     <div class="modal fade" id="${element.ref}" tabindex="-1" aria-labelledby="modal-${element.ref}" aria-hidden="true">
@@ -27,11 +29,11 @@ fetch('./assets/js/result.json')
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        <div>${element.description}</div>
+        <div class="modalDesc mb-3">${element.description}</div>
         <div>${element.composition}</div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn mt-auto mb-3" data-bs-dismiss="modal">Fermer</button>
+            <button type="button" class="btn mt-auto" data-bs-dismiss="modal">Fermer</button>
         </div>
         </div>
     </div>

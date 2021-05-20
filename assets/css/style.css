@@ -102,13 +102,23 @@ main .desc h3 {
     margin-bottom: 100px;
 }
 
-.myCard:nth-child(2n+1) {
+.myCard:nth-child(3n) {
     flex-direction: row-reverse;
 }
 
 .myCard button {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.myCard button:last-of-type {
+    background-color: unset;
+    color: black;
+    border: #ff8d00 2px solid;
+}
+
+.myCard i {
+    font-size: 1.2em;
 }
 
 .vosPhoto img {
@@ -144,6 +154,9 @@ footer .myInput {
     max-width: 300px;
 }
 
+.modalDesc {
+    font-family: 'Mulish', sans-serif;
+}
 
 
 
