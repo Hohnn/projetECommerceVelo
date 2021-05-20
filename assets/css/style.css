@@ -141,7 +141,7 @@ footer label {
 }
 
 footer .myInput {
-    width: 300px;
+    max-width: 300px;
 }
 
 

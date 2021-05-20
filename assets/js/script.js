@@ -1,5 +1,5 @@
 //importation du fichier JSON
-fetch('http://localhost:8888/projetECommerce/assets/js/result.json')
+fetch('./assets/js/result.json')
     .then(resp => resp.json())
     .then(function(bikeJSON){
       bikeJSON.results.forEach(element => {
@@ -7,10 +7,10 @@ fetch('http://localhost:8888/projetECommerce/assets/js/result.json')
         bike.innerHTML += ` 
       <!-- les produits -->
       <div class="row justify-content-between myCard">
-        <div class="col-6 bike">
+        <div class="col-12 col-md-6 bike">
           <img src="${element.image}" alt="">
         </div>
-        <div class="col-5 desc d-flex flex-column justify-content-between align-items-start">
+        <div class="col-12 col-md-5 desc d-flex flex-column justify-content-between align-items-start">
           <h3 class="mb-4">${element.nom}</h3>
           <p>${element.composition}</p>
           <div>Prix : ${element.prix}</div>
