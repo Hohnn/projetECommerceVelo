@@ -24,7 +24,7 @@ fetch('./assets/js/result.json')
       <!-- Modal -->
     <div class="modal fade" id="${element.ref}" tabindex="-1" aria-labelledby="modal-${element.ref}" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="moda€l-content">
+        <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${element.nom}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -33,7 +33,7 @@ fetch('./assets/js/result.json')
         <div class="modalDesc mb-3">${element.description}</div>
         <div>${element.composition}</div>
         </div>
-        <div class="moda€l-footer">
+        <div class="modal-footer">
             <button type="button" class="btn mt-auto" data-bs-dismiss="modal">Fermer</button>
         </div>
         </div>
@@ -46,24 +46,22 @@ fetch('./assets/js/result.json')
         const selectButtonItem = document.querySelectorAll("button[data-additem]");
         selectButtonItem.forEach(element => {
           let gg = 0
-          let priceMulti = 0
-          element.addEventListener("click", function () {
+          let priceMulti = 0            
             if (gg == 0 || item[item.length-1][0].includes(element.dataset.bikename) == false) {
-              item.push([element.dataset.bikename, element.dataset.price]);
+              
               element.dataset.number++;
               priceMulti = element.dataset.price
             } else {
               let price = element.dataset.price
               let slicePrice = price.slice(0, price.length - 1);
               element.dataset.number++;
-              priceMulti = ` ${slicePrice * element.dataset.number}€`
+              priceMulti = ` ${slicePrice * this.dataset.number}€`
             }
             gg++
-            console.log(item);
             addItem.innerHTML = " "
             item.forEach(element => {
               console.log(element);
-              addItem.innerHTML += `<div>Article : ${element[0]}</div><div>Prix : ${priceMulti}</div>`
+              addItem.innerHTML += `<div>Article : ${element[0]}</div><div class="fw-normal" data-price="${element[1]}">Prix : ${element[1]}</div>`
             });
           })
         });

@@ -166,5 +166,18 @@ footer .myInput {
     font-family: 'Mulish', sans-serif;
 }
 
+#addItem {
+    font-family: 'Mulish', sans-serif;
+}
+
+.panierButton {
+    background-color: #ff8d00;
+    color: white;
+}
+
+.buttonPanier button{
+    letter-spacing: 0.1em;
+}
+
 
 
