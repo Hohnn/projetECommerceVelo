@@ -1,11 +1,11 @@
 //importation du fichier JSON
 fetch('./assets/js/result.json')
-    .then(resp => resp.json())
-    .then(function(bikeJSON){
-      
-      bikeJSON.results.forEach(element => {
-          //attention, ajout de l'id="bike" à la ligne 90 de l'HTML  <div class="container-fluid" 
-        bike.innerHTML += ` 
+  .then(resp => resp.json())
+  .then(function (bikeJSON) {
+
+    bikeJSON.results.forEach(element => {
+      //attention, ajout de l'id="bike" à la ligne 90 de l'HTML  <div class="container-fluid" 
+      bike.innerHTML += ` 
       <!-- les produits -->
       <div class="row justify-content-between myCard" data-delete="${element.ref}">
         <div class="col-12 col-md-6 bike">
@@ -16,7 +16,7 @@ fetch('./assets/js/result.json')
           <p>${element.composition}</p>
           <div class="pb-2">Prix : ${element.prix}</div>
           <div class="d-flex justify-content-between w-100">
-            <button type="button" class="btn mt-auto mb-3" data-bikename="${element.nom}" data-additem="${element.ref}" data-price="${element.prix}" data-number="0"><i class="bi bi-cart3"></i></button>
+            <button type="button" class="btn mt-auto mb-3" data-bikename="${element.nom}" data-additem="${element.ref}" data-price="${element.prix}" data-number="1"><i class="bi bi-cart3"></i></button>
             <button type="button" class="btn mt-auto mb-3" data-bs-toggle="modal" data-bs-target="#${element.ref}">+ d'info</button>
           </div>
           </div>
@@ -40,51 +40,64 @@ fetch('./assets/js/result.json')
     </div>
     </div>
         `
-        clickNavButton(element)
+      clickNavButton(element)
 
-        var item = [];
-        const selectButtonItem = document.querySelectorAll("button[data-additem]");
-        selectButtonItem.forEach(element => {
-          let gg = 0
-          let priceMulti = 0
-          element.addEventListener("click", function () {
-            if (gg == 0 || item[item.length-1][0].includes(element.dataset.bikename) == false) {
-              item.push([element.dataset.bikename, element.dataset.price]);
-              element.dataset.number++;
-              priceMulti = element.dataset.price
-            } else {
-              let price = element.dataset.price
-              let slicePrice = price.slice(0, price.length - 1);
-              element.dataset.number++;
-              priceMulti = ` ${slicePrice * element.dataset.number}€`
-            }
-            gg++
-            console.log(item);
-            addItem.innerHTML = " "
-            item.forEach(element => {
-              console.log(element);
-              addItem.innerHTML += `<div>Article : ${element[0]}</div><div>Prix : ${priceMulti}</div>`
-            });
-          })
-        });
+      const selectButtonCartLess = document.querySelectorAll("button[data-cartless]");
+      selectButtonCartLess.forEach(element => {
+        element.addEventListener("click", function () {
+          console.log(priceMulti);
+          let cartLess = priceMulti - dataPrice
+          idCartLess.innerHTML = `Prix : ${cartLess}`
+        })
       });
-    })
-    .catch(err => console.error(`erreur importation JSON`))
+
+      var item = [];
+
+      const selectButtonItem = document.querySelectorAll("button[data-additem]");
+      selectButtonItem.forEach(element => {
+        let gg = 0
+        let dataNumber = element.dataset.number
+        element.addEventListener("click", function () {
+          if (gg == 0 || item[item.length - 1][0].includes(element.dataset.bikename) == false) {
+            item.push([element.dataset.bikename, element.dataset.price, this.dataset.number]);
+          } else {
+            let price = element.dataset.price
+            let slicePrice = price.slice(0, price.length - 1);
+            let quantityNumber = 1 + element.dataset.number++
+            console.log(quantityNumber);
+            // idCartLess.innerHTML = ` ${slicePrice * dataNumber}€`
+            for (let i = 0; i < item.length; i++) {
+              //Faut la travailler la condiiton ici
+              item[i].splice(2, 1, `${quantityNumber}`)
+              item[i].splice(1, 1, `${slicePrice * quantityNumber}`)
+            }
+          }
+          console.log(item);
+          gg++
+          addItem.innerHTML = " "
+          item.forEach(element => {
+            addItem.innerHTML += `<div>Article : ${element[0]}</div><div id="idCartLess">Prix : ${element[1]}</div><div>Qté : ${element[2]}</div>
+              <button type="button" class="btn btn-primary" data-cartless="${dataNumber}">-</button>`
+          });
+        })
+      });
+    });
+  })
+  .catch(err => console.error(`erreur importation JSON`))
 
 
 // navBar
 let navButton = document.querySelectorAll('a[data-navButton]')
-console.log(navButton)
 
 function clickNavButton(params) {
   navButton.forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('click', function () {
       let allBike = document.querySelector(`div[data-delete="${params.ref}"]`)
       let services = document.getElementById('services')
       let model = document.getElementById('model')
       navButton.forEach(element => {
         element.classList.remove('active')
-      })      
+      })
       this.classList.add('active')
       if (this.dataset.navbutton == 'accueil') {
         allBike.classList.remove('d-none')
@@ -134,4 +147,3 @@ function clickNavButton(params) {
     })
   })
 }
-
