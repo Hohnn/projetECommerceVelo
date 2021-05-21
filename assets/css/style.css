@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Oswald:wght@400;500;700&display=swap');
 
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navbar {
+    background-image: linear-gradient(90deg,hsla(0, 0%, 100%, 0) ,rgba(255, 255, 255, 0.63), hsla(0, 0%, 100%, 0) );
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    position: relative;
 }
 
 header {
@@ -12,6 +23,15 @@ header {
     background-position: center 45%;
     position: relative;
 }
+
+.stick {
+    position: absolute;
+    bottom: 0;
+    height: 56px;
+    background-color: #ffd200;
+}
+
+
 
 .container {
     max-width: 1000px;
@@ -67,6 +87,19 @@ header {
     font-size: 1.2em;
     padding: 0.2em 1em;
     border-radius: 100px;
+    position: relative;
+}
+
+.newitem::after {
+    content: '';
+    position: absolute;
+    background-color: #ffd200;
+    transform: translate(20%, -20%);
+    height: 15px;
+    width: 15px;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
 }
 
 .services .icon {
@@ -110,9 +143,13 @@ main .desc h3 {
     margin-bottom: 100px;
 }
 
-.myCard:nth-child(3n) {
+.myCard:nth-of-type(2n+1) {
     flex-direction: row-reverse;
 }
+.myCard:nth-of-type(2n+1) .bike {
+    transform: scaleX(-1);
+}
+
 
 .myCard button {
     padding-top: 0.5em;
@@ -167,7 +204,22 @@ footer .myInput {
 }
 
 #addItem {
-    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+}
+
+#addItem button {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+#addItem button:last-of-type {
+    background-color: #ff8d00;
+    margin-left: 5px;
+    color: white;
 }
 
 .panierButton {
@@ -179,5 +231,7 @@ footer .myInput {
     letter-spacing: 0.1em;
 }
 
-
+.myOrange {
+    background-color: #ffd200;
+}
 
