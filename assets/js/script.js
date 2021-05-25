@@ -247,7 +247,6 @@ function clickNavButton(params) {
           toDelete.classList.add('d-none')
           services.classList.add('d-none')
           model.innerHTML = 'LES VELOS ELECTRIQUES'
-          navbar.classList.add('sticky-top')
         } else {
           allBike.classList.remove('d-none')
         }
