@@ -235,3 +235,25 @@ footer .myInput {
     background-color: #ffd200;
 }
 
+.scrollTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    color: #ffd200;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.scrollTop:hover {
+    animation: anim 1s alternate ease-in-out infinite;
+}
+
+@keyframes anim {
+    from {
+        bottom: 1rem;
+    }
+    to {
+        bottom: 2rem;
+    }
+}
