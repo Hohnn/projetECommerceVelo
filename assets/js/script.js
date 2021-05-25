@@ -16,7 +16,7 @@ fetch('./assets/js/result.json')
           <p>${element.composition}</p>
           <div class="pb-2 " data-price="${element.ref}">${element.prix}</div>
           <div class="d-flex justify-content-between w-100">
-            <button tabindex="0" data-bs-trigger="focus" type="button" class="btn mt-auto mb-3" data-additem="${element.ref}" data-number="1" data-bs-container="body"  data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Ajouté" ><i class="bi bi-cart3"></i></button>
+            <button tabindex="0" data-bs-trigger="focus" type="button" class="btn mt-auto mb-3 btn-grad" data-additem="${element.ref}" data-number="1" data-bs-container="body"  data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Ajouté" ><i class="bi bi-cart3"></i></button>
             <button type="button" class="btn mt-auto mb-3" data-bs-toggle="modal" data-bs-target="#${element.ref}">+ d'info</button>
           </div>
           </div>
@@ -43,10 +43,6 @@ fetch('./assets/js/result.json')
     </div>
     </div>`
       clickNavButton(element)
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
 
       let button = document.querySelectorAll('button[data-additem]')
 
@@ -56,7 +52,6 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
               createObj(this)
               creerPanier()
               panierNewitem()
-              
               
           })
       })
@@ -247,7 +242,6 @@ function clickNavButton(params) {
           toDelete.classList.add('d-none')
           services.classList.add('d-none')
           model.innerHTML = 'LES VELOS ELECTRIQUES'
-          navbar.classList.add('sticky-top')
         } else {
           allBike.classList.remove('d-none')
         }
