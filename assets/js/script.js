@@ -114,7 +114,7 @@ fetch('./assets/js/result.json')
           panier.innerHTML +=
             `<ul class="border-bottom pb-2 mb-3">
               <li>Article : ${element.title}</li>
-              <li class="d-flex">Quantité : ${element.number}<button type="button" class="ms-auto btn btn-secondary" data-minus="${element.title}">-</button><button type="button" class="btn" data-addus="${element.title}">+</button><button type="button" class="btn" data-trash="${element.title}"><i class="bi bi-trash"></i></button></li>
+              <li class="d-flex">Quantité : ${element.number}<button type="button" class="ms-auto btn btn-secondary" data-minus="${element.title}">-</button><button type="button" class="btn myOrange" data-addus="${element.title}">+</button><button type="button" class="btn" data-trash="${element.title}"><i class="bi bi-trash"></i></button></li>
               <li>Prix : ${element.price} €</li>
           </ul>`
         })
