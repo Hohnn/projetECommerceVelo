@@ -119,7 +119,7 @@
       <div class="col-sm-3">
         <img src="./assets/images/raja-sen-azedtu7j_3E-unsplash.jpg" alt="">
       </div>
-      <p class="my-5">N'hésitez pas à nous envoyé vos plus belle créations, une selection sera faite chaque semaine pour être affiché sur le site. Si votre photo est séléctionné, des goodies vous seront envoyé de les jours qui suit. </p>
+      <p class="my-5">N'hésitez pas à nous envoyer vos plus belle créations, une selection sera faite chaque semaine pour être affiché sur le site. Si votre photo est séléctionné, des goodies vous seront envoyé dans les jours qui suit. </p>
     </div>
   </main>
 
@@ -135,7 +135,7 @@
           </div>
           <label class="my-3" for="email">Abonnez vous à notre newsletter</label>
           <div class="input-group mb-3 myInput">
-            <input type="text" name="email" class="form-control" placeholder="Votre email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" name="email" class="form-control bg-dark text-white" placeholder="Votre email" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <button class="input-group-text" id="basic-addon2">OK</button>
           </div>
         </div>
@@ -176,6 +176,7 @@
   </div>
 </div>
 
+<div class="scrollTop" id="scrollTop"><i class="bi bi-arrow-up-square"></i></div>
 
 
 
@@ -183,19 +184,6 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
 <script src="./assets/js/script.js"></script>
-<script>
-  document.getElementById("liveToastBtn").onclick = function() {
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    var toastList = toastElList.map(function(toastEl) {
-    // Creates an array of toasts (it only initializes them)
-      return new bootstrap.Toast(toastEl) // No need for options; use the default options
-    });
-   toastList.forEach(toast => toast.show()); // This show them
-
-    console.log(toastList); // Testing to see if it works
-  };
-
-</script>
 </body>
 
 </html>
