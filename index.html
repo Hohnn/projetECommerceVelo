@@ -183,19 +183,6 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>
 <script src="./assets/js/script.js"></script>
-<script>
-  document.getElementById("liveToastBtn").onclick = function() {
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-    var toastList = toastElList.map(function(toastEl) {
-    // Creates an array of toasts (it only initializes them)
-      return new bootstrap.Toast(toastEl) // No need for options; use the default options
-    });
-   toastList.forEach(toast => toast.show()); // This show them
-
-    console.log(toastList); // Testing to see if it works
-  };
-
-</script>
 </body>
 
 </html>
